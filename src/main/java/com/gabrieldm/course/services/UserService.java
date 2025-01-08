@@ -10,7 +10,7 @@ import com.gabrieldm.course.entities.User;
 import com.gabrieldm.course.repositories.UserRepository;
 
 @Service
-public class UserServices {
+public class UserService {
 	
 	@Autowired
 	private UserRepository repository;
