@@ -1,4 +1,4 @@
-package com.gabrieldm.course.entities;
+package com.gabrieldm.course.entities.enums;
 
 public enum OrderStatus {
 	WAITING_PAYMENT(1),

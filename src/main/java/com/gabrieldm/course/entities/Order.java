@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.Instant;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.gabrieldm.course.entities.enums.OrderStatus;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
