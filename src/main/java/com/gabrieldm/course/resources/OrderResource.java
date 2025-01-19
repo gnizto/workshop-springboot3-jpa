@@ -17,19 +17,19 @@ import com.gabrieldm.course.services.OrderService;
 public class OrderResource {
 	
 	@Autowired
-	private OrderService services;
+	private OrderService service;
 	
 	@GetMapping
 	public ResponseEntity<List<Order>> findAll() {
 		
-		List<Order> list = services.findAll();
+		List<Order> list = service.findAll();
 		
 		return ResponseEntity.ok().body(list);
 	}
 	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Order> findById(@PathVariable Long id) {
-		Order obj = services.findById(id);
+		Order obj = service.findById(id);
 		
 		return ResponseEntity.ok().body(obj);
 	}

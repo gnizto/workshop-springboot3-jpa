@@ -2,7 +2,6 @@ package com.gabrieldm.course.entities.pk;
 
 import java.io.Serializable;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.gabrieldm.course.entities.Order;
 import com.gabrieldm.course.entities.Product;
 

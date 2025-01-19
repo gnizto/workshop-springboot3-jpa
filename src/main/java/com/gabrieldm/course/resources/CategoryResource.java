@@ -17,19 +17,19 @@ import com.gabrieldm.course.services.CategoryService;
 public class CategoryResource {
 	
 	@Autowired
-	private CategoryService services;
+	private CategoryService service;
 	
 	@GetMapping
 	public ResponseEntity<List<Category>> findAll() {
 		
-		List<Category> list = services.findAll();
+		List<Category> list = service.findAll();
 		
 		return ResponseEntity.ok().body(list);
 	}
 	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Category> findById(@PathVariable Long id) {
-		Category obj = services.findById(id);
+		Category obj = service.findById(id);
 		
 		return ResponseEntity.ok().body(obj);
 	}
